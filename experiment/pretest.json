@@ -4,43 +4,43 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. ",
+      "question": "1. Which constant/s describes the effect of one species on another other?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Carrying capacity.",
+        "b": "Competition coefficient.",
+        "c": "Both carrying capacity and competition coefficient.",
+        "d": "None of the them."
       },
  
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },   
 
 
     {
-      "question": "2. ",
+      "question": "2. Which of the following involves the competition of organisms of the same species?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "intraspecific competition",
+        "b": "interspecific competition",
+        "c": "Predation",
+        "d": "All of the above"
       },
       
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
 
     
     {
-      "question": "3. ",
+      "question": "3. In the absence of interspecific competition, how does the carrying capacity of species 1 change along the transect?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "It remains constant throughout",
+        "b": "It fluctuates randomly",
+        "c": "It increases from west to east",
+        "d": "It decreases from west to east"
       },
      
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
