@@ -1,0 +1,55 @@
+
+
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which model is used to predict the effect of interspecific competition on population abundance?",
+      "answers": {
+        "a": "Lotka-Volterra competition model",
+        "b": "Hardy-Weinberg model",
+        "c": "Mendelian inheritance model",
+        "d": "Darwin's theory of evolution"
+      },
+ 
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },   
+
+
+    {
+      "question": "2. In the context of the lab, what is a species border?",
+      "answers": {
+        "a": "A region where species stop competing",
+        "b": "A physical barrier separating two species",
+        "c": "An area where two species merge into one",
+        "d": "A line beyond which environmental factors prevent successful reproduction"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+
+    
+    {
+      "question": "3. What does the competition coefficient αS1S2 represent?",
+      "answers": {
+        "a": "The effect of species 2 on species 1",
+        "b": "The effect of species 1 on species 2",
+        "c": "The carrying capacity of species 1",
+        "d": "The growth rate of species 2"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}	 
+	 
+	 
+
+ 	 
+
+
+
+

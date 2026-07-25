@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Interspecific Competition & Geographic Distributions — Simulation</title>
+<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="card" id="simbox"><div class="simbar"><span class="simbar-logo" aria-hidden="true"><img src="images\logo.svg" alt="Amrita Vishwa Vidyapeetham"></span><h1 class="simbar-title">Interspecific Competition &amp; Geographic Distributions</h1><button class="fs-btn" id="fsBtn" onclick="toggleFS()" title="Toggle full screen" aria-label="Toggle full screen">⛶</button></div>
+      <div class="subtabs" id="subtabs">
+        <button class="subtab active" data-mode="0">Carrying Capacity</button>
+        <button class="subtab" data-mode="1">Density</button>
+        <button class="subtab" data-mode="2">Eastern Border</button>
+        <button class="subtab" data-mode="3">Western Border</button>
+      </div>
+      <div class="sim">
+        <div class="controls">
+          <div class="field"><label>Gradient start <span class="val" id="v_start">1</span></label><input type="range" id="start" min="1" max="200" value="1" oninput="sync()"></div>
+          <div class="field"><label>Step <span class="val" id="v_frc">10</span></label><input type="range" id="frc" min="5" max="50" value="10" oninput="sync()"></div>
+          <div class="field"><label>Gradient end <span class="val" id="v_end">1000</span></label><input type="range" id="end" min="200" max="2000" step="50" value="1000" oninput="sync()"></div>
+          <div class="field"><label>α₁₂ (effect of sp.2 on sp.1) <span class="val" id="v_a12">0.8</span></label><input type="range" id="a12" min="0.1" max="1.5" step="0.05" value="0.8" oninput="sync()"></div>
+          <div class="field"><label>α₂₁ (effect of sp.1 on sp.2) <span class="val" id="v_a21">0.6</span></label><input type="range" id="a21" min="0.1" max="1.5" step="0.05" value="0.6" oninput="sync()"></div>
+          <div class="btnrow">
+            <button class="btn btn-primary" onclick="plot()">▶ Plot</button>
+            <button class="btn btn-ghost" onclick="resetSim()">↺ Reset</button>
+          </div>
+          <div class="dl-label">Download</div>
+<div class="btnrow">
+            <button class="btn btn-accent" onclick="downloadPNG()">⤓ PNG</button>
+            <button class="btn btn-accent" onclick="downloadCSV()">⤓ CSV</button>
+          </div>
+        </div>
+        <div class="plotwrap">
+          <div class="plot-title" id="plotTitle">Carrying capacity of each species</div>
+          <canvas class="chart" id="chart" width="720" height="460"></canvas>
+          <div class="legend" id="legend"></div>
+          <div class="readout"><span>Cursor: X = <b id="rx">–</b>, Y = <b id="ry">–</b></span></div>
+        </div>
+      </div>
+    </div>
+<div class="toast" id="toast"></div>
+<script src="./js/main.js"></script>
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+</html>
